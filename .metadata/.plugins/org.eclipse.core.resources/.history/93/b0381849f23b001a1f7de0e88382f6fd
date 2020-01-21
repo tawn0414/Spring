@@ -1,0 +1,5 @@
+package exam01;
+
+public interface TV_Inherit {
+	void turn_on();
+}

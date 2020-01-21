@@ -1,0 +1,26 @@
+package app1;
+/*
+ * 결함도가 극도로 높은 프로그램임.
+ * => 클래스간의 결함도가 강하고 의존성이 높다는 말.
+ * 
+ * */
+public class MyBeanTest {
+	public static void main(String[] args) {
+		MyBeanStyleB obj = new MyBeanStyleB();
+		run(obj);
+		show(obj);
+	}
+	public static void run(MyBeanStyleB obj) {
+		System.out.println("*******************");
+		obj.Hello("현빈");
+		obj.Hello("현빈");
+		System.out.println("*******************");
+	}
+	
+	public static void show(MyBeanStyleB obj) {
+		System.out.println("====================");
+		obj.Hello("현빈");
+		obj.Hello("현빈");
+		System.out.println("====================");
+	}
+}

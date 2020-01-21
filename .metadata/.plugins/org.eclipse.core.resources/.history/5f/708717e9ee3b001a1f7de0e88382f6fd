@@ -1,0 +1,26 @@
+package app2;
+
+/*
+ * oop°¡ Àû¿ëµÇ¾î ÀÖ´Â ÇÁ·Î±×·¥.
+ * */
+public class MyBeanTest {
+	public static void main(String[] args) {
+		MyBeanStyleB obj = new MyBeanStyleB();
+		run(obj);
+		show(obj);
+	}
+	public static void run(MyBeanStyleInherit obj) {
+		System.out.println("*******************");
+		obj.Hello("Çöºó");
+		obj.Hello("Çöºó");
+		System.out.println("*******************");
+	}
+	
+	public static void show(MyBeanStyleInherit obj) {
+		System.out.println("====================");
+		obj.Hello("Çöºó");
+		obj.Hello("Çöºó");
+		System.out.println("====================");
+	}
+}
+

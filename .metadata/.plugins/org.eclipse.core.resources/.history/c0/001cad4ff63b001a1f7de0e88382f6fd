@@ -1,0 +1,13 @@
+package factorypattern;
+public class ConnectionFactory {
+	public Connection getConnection(String str) {
+		String url = str.toLowerCase(); //사용자가 소문자 입력할지 대문자 입력할지 모르니까 해준것.
+		if (url.indexOf("oracle") >= 0) {
+			return new OracleConnection(url);
+		} else if (url.indexOf("mysql") >= 0) {
+			return new MySQLConnection(url);
+		} else {
+			return null;
+		}
+	} 	
+}

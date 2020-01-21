@@ -1,0 +1,23 @@
+package app2;
+
+import app1.MyBeanStyleB;
+
+/*
+ * oop가 적용되어 있는 프로그램.
+ * */
+public class MyBeanTest {
+	public static void main(String[] args) {
+		MyBeanStyleInherit obj = new MyBeanStyleA();
+		run(obj);
+		show(obj);
+	}
+	public static void run(MyBeanStyleA obj) {
+		System.out.println("*******************");
+		obj.testHello("현빈");
+		obj.testHello("현빈");
+		System.out.println("*******************");
+	}
+	
+
+}
+

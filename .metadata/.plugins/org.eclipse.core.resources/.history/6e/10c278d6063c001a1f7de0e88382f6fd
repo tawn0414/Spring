@@ -1,0 +1,28 @@
+package app3;
+/*
+	스프링을 이용해서 프로그램을 실행하기. 
+ */
+public class MyBeanTest {
+	public static void main(String[] args) {
+		MyBeanStyleA objA = new MyBeanStyleA();
+		MyBeanStyleB objB = new MyBeanStyleB();
+		run(objA);
+		show(objA);
+		run(objB);
+		show(objB);
+	}
+	public static void run(MyBeanStyleInherit obj) {
+		System.out.println("*******************");
+		obj.Hello("현빈");
+		obj.Hello("현빈");
+		System.out.println("*******************");
+	}
+	
+	public static void show(MyBeanStyleInherit obj) {
+		System.out.println("====================");
+		obj.Hello("현빈");
+		obj.Hello("현빈");
+		System.out.println("====================");
+	}
+}
+

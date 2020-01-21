@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="basic.MemberDAO"/>
+<fullyQualifiedTypeName name="app1.MyBeanStyleA"/>
+<fullyQualifiedTypeName name="app2.MyBeanStyleInherit"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+<fullyQualifiedTypeName name="app3.MyBeanStyleInherit"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,13 @@
+package app2;
+/*
+ * oop가 적용되어 있는 프로그램.
+ * */
+public class MyBeanTest {
+	public static void main(String[] args) {
+		MyBeanStyleInherit objA = new MyBeanStyleA();
+		MyBeanStyleInherit objB = new MyBeanStyleB();
+		objA.testHello("현빈");
+		objB.testHello("원빈");
+	}
+}
+

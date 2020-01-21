@@ -1,0 +1,28 @@
+package app2;
+
+import app1.MyBeanStyleB;
+
+/*
+ * oop°¡ Àû¿ëµÇ¾î ÀÖ´Â ÇÁ·Î±×·¥.
+ * */
+public class MyBeanTest {
+	public static void main(String[] args) {
+		MyBeanStyleInherit obj = new MyBeanStyleA();
+
+		obj.run("Çöºó");
+	}
+	public static void run(MyBeanStyleB obj) {
+		System.out.println("*******************");
+		obj.Hello("Çöºó");
+		obj.Hello("Çöºó");
+		System.out.println("*******************");
+	}
+	
+	public static void show(MyBeanStyleB obj) {
+		System.out.println("====================");
+		obj.Hello("Çöºó");
+		obj.Hello("Çöºó");
+		System.out.println("====================");
+	}
+}
+

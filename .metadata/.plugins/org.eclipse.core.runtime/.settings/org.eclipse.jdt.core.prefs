@@ -6,3 +6,4 @@ org.eclipse.jdt.core.compiler.compliance=1.8
 org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
 org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
 org.eclipse.jdt.core.compiler.source=1.8
+org.eclipse.jdt.core.userLibrary.mylib=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<userlibrary systemlibrary\="false" version\="2">\r\n\t<archive path\="C\:/Users/student/Desktop/\uC0C8 \uD3F4\uB354/spring-beans-4.2.4.RELEASE.jar"/>\r\n\t<archive path\="C\:/Users/student/Desktop/\uC0C8 \uD3F4\uB354/spring-context-4.2.4.RELEASE.jar"/>\r\n\t<archive path\="C\:/Users/student/Desktop/\uC0C8 \uD3F4\uB354/spring-core-4.2.4.RELEASE.jar"/>\r\n\t<archive path\="C\:/Users/student/Desktop/\uC0C8 \uD3F4\uB354/commons-logging-1.1.1.jar"/>\r\n\t<archive path\="C\:/Users/student/Desktop/\uC0C8 \uD3F4\uB354/spring-expression-4.2.4.RELEASE.jar"/>\r\n</userlibrary>\r\n
