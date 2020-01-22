@@ -8,7 +8,7 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 		- new 연산자를 이용해서 객체생성하는 코드를 직접 정의하지 않는다. (API는 제외)
 		- 스프링 내부에서 제공하는 Factory클래스를 이용해서 객체를 전달받는다.
  */
-public class MyBeanTest {
+public class MyBeanTest1 {
 	public static void main(String[] args) {
 		//스프링의 Factory클래스를 생성하기.
 		ApplicationContext factory = new GenericXmlApplicationContext("/config/bean.xml");				
