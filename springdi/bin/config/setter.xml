@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- 
+		<bean>을 생성할 때 <constructor-args>엘리먼트가 없으면 기본 생성자를 호출해서 객체를 생성한다.
+		=>기본생성자를 만들어주라는 말.
+		<property>에서 name속성에 정의한 dao?? -> 내가 InsaImpl에 정의한 멤버변수명 아님.
+		<property>에서 name속성에 정의한 dao의 첫 글자를 대문자로 변경하고 set을 접두사로 추가한 메소드를 찾아서 호출.
+			ex)name속성이 dao인 경우 setDAO를 찾는 것이다.
+	 -->
+	
+<!-- 	<bean id="dao" class="di.setter.basic.MemberDAO" />
+	<bean id="insa" class="di.setter.basic.InsaImpl">
+		<property name="dao" ref="dao"/>
+	</bean> -->
+	
+	<!-- <bean id="dice" class="di.setter01.Dice"/>
+	<bean id="player" class="di.setter01.Player">
+		<property name="d" ref="dice"/>
+	</bean> -->
+	
+	<bean id="logic" class="di.setter02.LogicImpl"/>
+<!-- 	<bean id="service" class="di.setter02.ServiceImpl">
+		<property name="mylogic" ref="logic"/>
+	</bean> -->
+	
+	<bean id="service" class="di.setter02.ServiceImpl">
+		<property name="mylogic" ref="logic"/>
+		<constructor-arg value="현빈"/>
+		<constructor-arg value="안녕"/>
+	</bean>
+	
+</beans>
